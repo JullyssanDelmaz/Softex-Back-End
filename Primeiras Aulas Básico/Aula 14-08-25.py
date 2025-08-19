@@ -13,6 +13,7 @@ Remover Itens
 frutas.remove("banana")
 print(frutas)
 frutas.pop(2)
+frutas.pop() #Remove o último item da lista
 print(frutas)
 del frutas #Serve pra eliminar qualquer coisa dentro do python
 del frutas[0] #Serve pra eliminar um item pelo índice dentro da lista
@@ -41,3 +42,6 @@ salada_de_fruta.index("banana") # Para descobrir a posição do item Banana
 idx_banana = frutas.index("banana") # Verificando o índice da Banana
 frutas.pop(idx_banana) # Tirando o item banana pelo índice
 print(frutas) # Lista sem a banana
+
+sabores = ["churrasco", "pimenta", "tomate", ["pizza", "queijo", "galinha caipira"]]
+sabores[-1][-1]="frango teryaki" #trocando o elemento de uma lista dentro de uma lista
