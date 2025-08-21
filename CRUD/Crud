@@ -1,3 +1,17 @@
 GRUPO: Cláudia, Juliana, Jullyssan
 Ambiente Virtual VENV
 python -m venv .venv
+@JullyssanDelmaz ➜ /workspaces/Softex-Back-End (main) $ cd CRUD
+@JullyssanDelmaz ➜ /workspaces/Softex-Back-End/CRUD (main) $ pythom -m venv .venv
+bash: pythom: command not found
+@JullyssanDelmaz ➜ /workspaces/Softex-Back-End/CRUD (main) $ python -m venv .venv
+@JullyssanDelmaz ➜ /workspaces/Softex-Back-End/CRUD (main) $ source .venv/bin/activate
+(.venv) @JullyssanDelmaz ➜ /workspaces/Softex-Back-End/CRUD (main) $ 
+
+pip install django
+Collecting django
+
+pip freeze
+asgiref==3.9.1
+Django==5.2.5
+sqlparse==0.5.3
