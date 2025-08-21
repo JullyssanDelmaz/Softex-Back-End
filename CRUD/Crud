@@ -1,0 +1,3 @@
+GRUPO: Cláudia, Juliana, Jullyssan
+Ambiente Virtual VENV
+python -m venv .venv
