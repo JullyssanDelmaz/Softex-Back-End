@@ -48,27 +48,40 @@ livros = ["Harry Potter e a Pedra Filosofal", "Sophia", "Vidas Secas"]
 
 
 #10
-notas = []
-aluno_1 = []
-soma_a1 = 0
-i= 0
-while i <3:
-    nota_1 = int(input(f"Escreva a {i+1}° nota: "))
-    aluno_1.append(nota_1)
-    i+=1
-    soma_a1+=nota_1
-notas.append(aluno_1)
+# notas = []
+# aluno_1 = []
+# soma_a1 = 0
+# i= 0
+# while i <3:
+#     nota_1 = int(input(f"Escreva a {i+1}° nota: "))
+#     aluno_1.append(nota_1)
+#     i+=1
+#     soma_a1+=nota_1
+# notas.append(aluno_1)
 
-aluno_2 = []
-soma_a2 = 0
-x=0
-while x<3:
-    nota_2 = int(input(f"Escreva a {x+1}° nota: "))
-    aluno_2.append(nota_2)
-    x+=1
-    soma_a2+=nota_2
-notas.append(aluno_2)
-print(notas)
-print(f"A média do primeiro aluno é {soma_a1/3 :.2f}.")
-print(f"A média do segundo aluno é {soma_a2/3 :.2f}.")
+# aluno_2 = []
+# soma_a2 = 0
+# x=0
+# while x<3:
+#     nota_2 = int(input(f"Escreva a {x+1}° nota: "))
+#     aluno_2.append(nota_2)
+#     x+=1
+#     soma_a2+=nota_2
+# notas.append(aluno_2)
+# print(notas)
+# print(f"A média do primeiro aluno é {soma_a1/3 :.2f}.")
+# print(f"A média do segundo aluno é {soma_a2/3 :.2f}.")
 
+#11
+
+tabuleiro = [["[]" for _ in range(8)] for _ in range(8)]
+elementos_1 = ["tor", "cav", "bis", "rai", "rei", "bis", "cav", "tor"]
+elementos_2 = ["pea", "pea", "pea", "pea", "pea", "pea", "pea", "pea"]
+
+tabuleiro[0] = elementos_1
+tabuleiro[1] = elementos_2
+tabuleiro[6] = elementos_2
+tabuleiro[7] = elementos_1
+
+for linha in tabuleiro:
+    print(linha)
