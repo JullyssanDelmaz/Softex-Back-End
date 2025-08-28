@@ -35,6 +35,7 @@
 palavras = ["maçã", "banana", "maçã", "laranja", "banana", "maçã"]
 
 
+
 #7
 d = {"a": 1, "b": 2, "c": 3}
 
