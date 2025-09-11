@@ -108,18 +108,104 @@
 
 # Questão 5
 
-class ContaBancaria:
-    def __init__(self, titular, saldo):
-        self.titular = titular
-        self.saldo = saldo
-    def __str__(self):
-        return f"O saldo é {self.saldo}."
-    def depositar(self, valor):
-        saldo += valor
-        print(f"O saldo da conta é {saldo}.")
-    def sacar(self, valor):
-        if saldo>= valor:
-            saldo-=valor
-            print(f"O saldo da conta é {saldo}.")
-mov1 = ContaBancaria("Jullyssan", 250)
-mov1.depositar()
+# class ContaBancaria:
+#     def __init__(self, titular, saldo=0):
+#         self.titular = titular
+#         self.saldo = saldo
+#     def __str__(self):
+#         return f"O saldo é {self.saldo}."
+#     def __repr__(self):
+#         return f"ContaBancaria(titular= {self.titular!r}, o saldo={self.saldo!r})"
+    
+
+
+#     def depositar(self, valor):
+#         self.saldo += valor
+#         print(f"O saldo da conta é {self.saldo}.")
+
+
+#     def sacar(self, valor):
+#         self.saldo-=valor
+#         print(f"O saldo da conta é {self.saldo}.")
+
+# mov1 = ContaBancaria("Jullyssan", 250)
+# mov1.depositar(140)
+# mov1.sacar(90)
+
+# Questão 6
+
+# class ContaBancaria:
+#     def __init__(self, titular, saldo=0):
+#         self.titular = titular
+#         self.saldo = saldo
+#     def __str__(self):
+#         return f"O saldo é {self.saldo}."
+#     def __repr__(self):
+#         return f"ContaBancaria(titular= {self.titular!r}, o saldo={self.saldo!r})"
+    
+
+
+#     def depositar(self, valor):
+#         self.saldo += valor
+#         print(f"O saldo da conta é {self.saldo}.")
+
+
+#     def sacar(self, valor):
+#         if valor > self.saldo:
+#             print("Saldo insuficiente")
+#         else:
+#             self.saldo-=valor
+#             print(f"O saldo da conta é {self.saldo}.")
+
+# mov1 = ContaBancaria("Jullyssan", 250)
+# mov1.sacar(300)
+
+
+# Questão 7 e 8
+
+# class Aluno:
+
+#     def __init__(self, nome, nota):
+#         self.nome = nome
+#         self.nota = nota
+#     def __str__(self):
+#         return f"Aluno: {self.nome} - Nota: {self.nota}"
+#     def __repr__(self):
+#         return f"(aluno={self.nome!r}, nota={self.nota!r})"
+    
+# aluno1 = Aluno("Gabriela", 9.5)
+# aluno2 = Aluno("Kalina", 5)
+
+
+# class Turma:
+#     def __init__(self):
+#         self.alunos = [ ]
+#     def cadastro_alunos(self, aluno):
+#         self.alunos.append(aluno)
+        
+
+# turma1 = Turma()
+# turma1.cadastro_alunos(aluno1)
+# turma1.cadastro_alunos(aluno2)
+# print(turma1.alunos)
+# print(aluno1)
+# print(aluno2)
+
+# Questão 9
+
+# class Cachorro:
+#     especie = "Canis familiaris"
+#     def __init__(self, nome, idade):
+#         self.nome = nome
+#         self.idade = idade
+#     def __str__(self):
+#         return f"O cachorro {self.nome} tem {self.idade} anos de idade."
+    
+# cachorro007 = Cachorro("Berlim", 4)
+# print(cachorro007.especie)
+# cachorro007.especie= "Canis gatis"
+# print(cachorro007.especie)
+
+
+    
+
