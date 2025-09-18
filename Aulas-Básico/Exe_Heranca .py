@@ -59,7 +59,7 @@ class Usuario:
 
 
 class Cliente(Usuario):
-    
+    ...
 
 cliente01 = Cliente("Jullyssan", "jullydelmaz@yahoo.com.br")
 
