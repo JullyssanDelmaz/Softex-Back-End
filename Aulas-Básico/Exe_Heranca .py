@@ -47,21 +47,149 @@
 
 # Questão 3
 
-class Usuario:
-    def __init__(self, nome, email):
-        self.nome = nome
-        self.email = email
-    def __str__(self):
-        return f"Nome: {self.nome} | E-mail: {self.email}"
+# class Usuario:
+#     def __init__(self, nome, email):
+#         self.nome = nome
+#         self.email = email
+#     def __str__(self):
+#         return f"Nome: {self.nome} | E-mail: {self.email}"
     
-    def saudacao():
-        print("Olá, usuário")
+#     def saudacao(self):
+#         print("Olá, usuário")
 
 
-class Cliente(Usuario):
-    ...
+# class Cliente(Usuario):
+#     print("Olá, Cliente!")
+#     ...
 
-cliente01 = Cliente("Jullyssan", "jullydelmaz@yahoo.com.br")
+# cliente01 = Cliente("Jullyssan", "jullydelmaz@yahoo.com.br")
+
+
+# Questão 4
+
+# class Usuario:
+#     def __init__(self, nome, email):
+#         self.nome = nome
+#         self.email = email
+#     def __str__(self):
+#         return f"Nome: {self.nome} | E-mail: {self.email} | Saldo: {self.saldo}"
+    
+    
+# class Cliente(Usuario):
+#     def __init__(self, nome, email, saldo):
+#         super().__init__(nome, email)
+#         self.saldo = saldo
+
+# cliente01 = Cliente("Jullyssan", "jullydelmaz@yahoo.com.br", 500)
+# print(cliente01)
+
+
+# Questão 5
+
+# class Usuario:
+#     def __init__(self, nome, email):
+#         self.nome = nome
+#         self.email = email
+#     def __str__(self):
+#         return f"Nome: {self.nome} | E-mail: {self.email} | Cargo: {self.cargo} | Turno: {self.turno} | Departamento: {self.departamento}"
+
+# class Funcionario(Usuario):
+#     def __init__(self, nome, email, cargo, turno):
+#         super().__init__(nome, email)
+#         self.cargo = cargo
+#         self.turno = turno
+
+# class Gerente(Funcionario):
+#     def __init__(self, nome, email, cargo, turno, departamento):
+#         super().__init__(nome, email, cargo, turno)
+#         self.departamento = departamento
+
+# gerente1 = Gerente("Jullyssan", "jdelmaz@git.com", "Gerente Educacional", "Integral", "Pedagógico")
+# print(gerente1)
+
+# Questão 6
+
+# class Autenticacao:
+#     def __init__(self, email, senha):
+#         self.email = email
+#         self.senha = senha
+
+#     def login(self, email, senha):
+#         if self.email == email and self.senha == senha :
+#             return("Login permitido!")
+#         else:
+#             return("Login não permitido, tente novamente!")
+
+# class Permissao:
+#     def __init__(self, departamento):
+#         self.departamento = departamento
+
+#     def verificar_permissao(self, departamento):
+#         if departamento == "administração":
+#             return("Acesso autorizado!")
+#         else:
+#             return("Acesso autorizado apenas para administradores.")
+
+# class Administrador(Autenticacao, Permissao):
+#     def __init__(self, email, senha, departamento):
+#         Autenticacao.__init__(self, email, senha)
+#         Permissao.__init__(self, departamento)
+
+
+# usuario01 = Administrador("jdelmaz@git.com", 123456, "pedagógico")
+# print(usuario01.login("jdelmaz@git.com", 123456))
+# print(usuario01.verificar_permissao("pedagógico"))
+
+
+# Questão 7
+
+
+class Autenticacao:
+    def __init__(self, email, senha):
+        self.email = email
+        self.senha = senha
+
+    def login(self, email, senha):
+        if self.email == email and self.senha == senha :
+            return("Login permitido!")
+        else:
+            return("Login não permitido, tente novamente!")
+        
+    def status(self):
+        return f"Login permitido!"
+
+
+class Permissao:
+    def __init__(self, departamento):
+        self.departamento = departamento
+
+    def verificar_permissao(self, departamento):
+        if departamento == "administração":
+            return("Acesso autorizado!")
+        else:
+            return("Acesso autorizado apenas para administradores.")
+        
+    def status(self):
+        return f"Acesso autorizado!"
+
+class Administrador(Autenticacao, Permissao):
+    def __init__(self, email, senha, departamento):
+        Autenticacao.__init__(self, email, senha)
+        Permissao.__init__(self, departamento)
+
+
+usuario01 = Administrador("jdelmaz@git.com", 123456, "pedagógico")
+print(usuario01.login("jdelmaz@git.com", 123456))
+print(usuario01.verificar_permissao("pedagógico")) 
+
+print(Administrador.__mro__)
+
+
+
+
+        
+
+
 
 
 
