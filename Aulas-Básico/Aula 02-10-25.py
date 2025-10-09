@@ -70,34 +70,34 @@ from abc import ABC, abstractmethod
 
 # Questão 2
 
-# class Pessoa(ABC):
-#     @abstractmethod
-#     def falar(self):
-#         ...
-#     @abstractmethod
-#     def andar(self):
-#         ...
-#     @abstractmethod
-#     def comer(self):
-#         ...
+class Pessoa(ABC):
+    @abstractmethod
+    def falar(self):
+        ...
+    @abstractmethod
+    def andar(self):
+        ...
+    @abstractmethod
+    def comer(self):
+        ...
 
-# class Funcionario(Pessoa):
-#     def falar(self):
-#         print("Ele está falando.")
-#     def andar(self):
-#         print("Ele está andando.")
-#     def comer(self):
-#         print("Ele está comendo.")
+class Funcionario(Pessoa):
+    def falar(self):
+        print("Ele está falando.")
+    def andar(self):
+        print("Ele está andando.")
+    def comer(self):
+        print("Ele está comendo.")
 
-# class Aluno(Pessoa):
-#     def falar(self):
-#         print("Ele falou.")
-#     def andar(self):
-#         print("Ele andou.")
-#     def comer(self):
-#         print("Ele comeu.")
+class Aluno(Pessoa):
+    def falar(self):
+        print("Ele falou.")
+    def andar(self):
+        print("Ele andou.")
+    def comer(self):
+        print("Ele comeu.")
     
-# jullyssan = Funcionario()
-# jullyssan.falar()
-# jully = Aluno()
-# jully.andar()
+jullyssan = Funcionario()
+jullyssan.falar()
+jully = Aluno()
+jully.andar()
