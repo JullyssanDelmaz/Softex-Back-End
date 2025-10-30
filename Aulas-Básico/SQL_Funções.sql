@@ -22,3 +22,4 @@
 
 -- SELECT AVG(nota2) AS media_nota2
 -- FROM Aluno;
+
